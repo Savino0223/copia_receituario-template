@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;        
+    }
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+div.hospital-box{
+    text-align: left !important;
+    justify-content: center;
+    background-color: brown;
+    margin-top: 0;
+    padding: 0;
+    height: 80px;
+}
+
+.titulo-hospital{
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+div.titulo{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+div.receituario{
+    text-align: center;
+    justify-content: center;
+    border: solid 1px;
+    margin-left: 300px;
+}
+
+/* a partir daqui é div com dados do paciente */
+div.dados-paciente{
+    border: solid 1px;
+    margin: 15px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+div.div-nome{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input.input-nome-paciente{
+    width: 100% !important;
+}
+
+div.titulo-dados{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 1px;
+    padding: 0;
+}
+
+div.div-input-nome-paciente{
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+
+/* a partir daqui é div com dados CPF do paciente */
+div.div-cpf-endereco-numero{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.div-input-cpf-paciente{
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
